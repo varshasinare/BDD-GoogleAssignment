@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="537.079" tests="22" skipped="0" failures="1" errors="0">
+<testcase classname="validation of Google homepage" name="To verify that the Google web page is launched successfully" time="11.413">
+<system-out><![CDATA[
+Given user hit www.google.co.in.............................................passed
+When user is on google home page............................................passed
+Then Verify given Elements on homepage......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="validation of Google homepage" name="To verify all the Google apps (My Account, Search, Maps, YouTube, Play, News, Gmail, Drive, Google+, Translate, Photos) in the dialog box" time="12.025">
+<system-out><![CDATA[
+Given user is on google home page...........................................passed
+When user click on Google apps..............................................passed
+Then All Apps should be displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="validation of Google homepage" name="To verify that all the Google apps (My Account, Search, Maps, YouTube, Play, News, Gmail, Drive, Calender, Google+, Translate, Photos) are launched properly" time="52.133">
+<system-out><![CDATA[
+Given user is on google home page...........................................passed
+When user click on Google apps..............................................passed
+Then All Apps should be displayed and HomePage of respective App should open.passed
+]]></system-out>
+</testcase>
+<testcase classname="validation of Google homepage" name="To verify that the user is able to Sign-in to the Google apps-My Account" time="18.782">
+<system-out><![CDATA[
+Given user click on Google apps.............................................passed
+When user enters  active EmailID "vrshholkar@gmail.com" and Password "Varsha@123".passed
+Then user should navigate to Apps homepage..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="validation of Google homepage" name="To verify that clicking on the language links (Hindi, Marathi etc) launches Google in respective language" time="25.143">
+<system-out><![CDATA[
+Given user is on google home page...........................................passed
+When user click on setting and then search setting then select language.....passed
+And Select desired language and press Save..................................passed
+Then HomePage should be displayed in resp language..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="validation of Google homepage" name="To open and close the browser" time="2.634">
+<system-out><![CDATA[
+Given user hit www.google.co.in.............................................passed
+When user is on google home page............................................passed
+Then User close browser.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Apps/Products" name="To verify the Google apps/products on Google products webpage" time="15.8">
+<system-out><![CDATA[
+Given user is on google home page...........................................passed
+When user navigate to "https://about.google/intl/en/products/" link.........passed
+Then Verify Google apps/products on Google products webpage.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google search validation" name="To validate that the Google performs the search operation properly - Example #1.1" time="15.199">
+<system-out><![CDATA[
+Given user is on google home page...........................................passed
+When user enters "Amitabh Bachchan".........................................passed
+Then Search options are displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google search validation" name="To validate that the Google performs the search operation properly - Example #1.2" time="15.195">
+<system-out><![CDATA[
+Given user is on google home page...........................................passed
+When user enters "Abdul Kalam"..............................................passed
+Then Search options are displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify that user is able to login to Gmail - Example #1.1" time="22.055">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+When user enters valid "vrshholkar@gmail.com" and "Varsha@123"..............passed
+Then user should able to login to gmail and Verify the objects..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify the total no. of emails received by the user - Example #1.1" time="22.632">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on total no. Emails.........................................passed
+Then Total no of Emails should be displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify the total no. of emails marked with STAR - Example #1.1" time="24.971">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Starred Emails...........................................passed
+Then Total no of Emails should be displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify and count unread emails in an INBOX - Example #1.1" time="28.053">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Unread Emails............................................passed
+Then Total no of Unread Emails should be displayed..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify and count the read emails in an INBOX - Example #1.1" time="27.151">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Read Emails..............................................passed
+Then Total no of Read Emails should be displayed............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify that Compose is working properly - Example #1.1" time="23.93">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Compose..................................................passed
+Then Compose window should open.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify that email is Send properly to email address in To,cc &amp; bcc - Example #1.1" time="34.962">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Compose and Enter "varshah.holkar@gmail.com" "sinare21@gmail.com" "sinare21@gmail.com".passed
+Then After sending an email, verify that it exists in Sent emails...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify the search operation i.e search the emails received from specific email address from INBOX - Example #1.1" time="25.855">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click search box and enter Email that need to search..............passed
+Then user can se all mails received fron that EmailID.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify the emails which are with attachments in INBOX - Example #1.1" time="23.534">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click search box and enter Email with Attachments.................passed
+Then user can see all Emails with attachments...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify that Settings page is displayed properly - Example #1.1" time="27.787">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Setting..................................................passed
+Then user should navigate to Setting Page and validate......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify that emails are moved from source label to target label (Folders) - Example #1.1" time="41.723">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class='G-Ni J-J5-Ji']//div[@aria-label='Move to']&quot;}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-GEL4LN3', ip: '192.168.1.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7afde8a839e3ccecc9156c073d93ae4, findElement {using=xpath, value=//*[@class='G-Ni J-J5-Ji']//div[@aria-label='Move to']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\sinar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54590/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c7afde8a839e3ccecc9156c073d93ae4">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='G-Ni J-J5-Ji']//div[@aria-label='Move to']"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-GEL4LN3', ip: '192.168.1.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7afde8a839e3ccecc9156c073d93ae4, findElement {using=xpath, value=//*[@class='G-Ni J-J5-Ji']//div[@aria-label='Move to']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\sinar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54590/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c7afde8a839e3ccecc9156c073d93ae4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.edusolun.pom.GmailFeatures.moveToLable(GmailFeatures.java:198)
+	at com.edusolun.stepDefinations.GmailStepDefination.user_select_email_and_click_on_move_to_folder(GmailStepDefination.java:124)
+	at ✽.user select Email and Click on MoveTo folder(file:///F:/JAVA%20SEL/eclipseworkspace/CucumberGoogleAssignment/src/test/resources/Features/Gmail.feature:107)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user select Email and Click on MoveTo folder...........................failed
+Then user can see Emails are moved to selected folder.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify that the new label is properly created - Example #1.1" time="35.43">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Create New label.........................................passed
+Then user can see new Label created.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Gmail" name="To verify that the user can successfully Sign-out from Gmail - Example #1.1" time="29.881">
+<system-out><![CDATA[
+Given user navigate to "https://mail.google.com/"...........................passed
+And user enters valid "vrshholkar@gmail.com" and "Varsha@123"...............passed
+When user click on Sign_out.................................................passed
+Then user should able to log out............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
